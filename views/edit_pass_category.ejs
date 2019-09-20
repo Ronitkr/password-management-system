@@ -1,0 +1,33 @@
+<%- include('header') %>
+
+<div class="container">
+    <div class="row" style="margin: 15% 0 0 0">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                    <div class="card">
+                            <div class="card-header bg-info text-white">
+                              <center><b>Add Password Category</b></center>
+                            </div>
+                            
+                            <div class="card-body">
+                              <form action="/users/password_category_list/edit/" method="POST">
+                                <input type="hidden" value="<%= id %>" name="id">    
+                                <input type="text" class="form-control" name="addPwdCategory" id="add-pwd-category" value="<%= records.pass_category %>" placeholder="ex: godaddy, mobile">
+                                    <button type="submit" class="btn btn-success mt-2 w-100">Submit</button>  
+                              </form>
+                            </div>
+                    </div>        
+                          </div>
+            </div>
+            <div class="col-md-4"></div>
+    </div>
+    
+</div>
+
+
+
+<%- include('footer') %>
+
+
+
+              
